@@ -12,7 +12,7 @@ const { body, check } = require('express-validator');
 
 const {
     validar_jwt,
-    validacionmateria
+    siExistemateria
 }= require('../middlewares');
 
 //AÑADIR materiaS

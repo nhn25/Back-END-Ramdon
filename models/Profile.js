@@ -12,10 +12,6 @@ const ProfileSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    skills: {
-        type: [String],
-        required: true
-    },
     bio: {
         type: String
     },
@@ -24,20 +20,14 @@ const ProfileSchema = new mongoose.Schema({
     },
     education:[
         {
-            school: {
-            type: String,
-            required: true
+            tituloSecu: {
+            type: String
             },
-            from: {
-                type: Date,
-                required: true
+            tituloUni: {
+                type: String
             },
             to: {
                 type: Date
-            },
-            current: {
-                type: Boolean,
-                default: false
             },
             description: {
                 type: String
@@ -58,10 +48,6 @@ const ProfileSchema = new mongoose.Schema({
             type: String
         }
     },
-    date: {
-        type: Date,
-        default: Date.now
-    }
 })
 
 module.exports = Profile = mongoose.model('profile', ProfileSchema)

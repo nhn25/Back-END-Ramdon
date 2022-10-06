@@ -13,5 +13,5 @@
 9. 2-10-22: Se creo el middleware para validar el token enviado por los headers. ✔
 10. 3-10-22: se creo middlewares con validaciones para los diferentes modelos. 🔘
 11. 3-10-22: corrijendo errores de enrutamiento. 🔘
-
-
+12. 
+13. 

@@ -1,4 +1,4 @@
-const { body, check } = require('express-validator');
+const { check } = require('express-validator');
 const { siExistecarrera } = require('./validar_carrera');
 const {ExisteEmail} = require('./validar_email');
 const {siExistemateria} = require('./validar_materia');

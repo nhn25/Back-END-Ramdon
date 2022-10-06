@@ -34,26 +34,6 @@ const UserShema = new Schema({
             type: String,
             required: [true, "el año que cursa es necesario"]
         }
-    ,
-   
-            DNI: {
-                type: String
-            },
-            CUIL: {
-                type: String
-            },
-            domicilio: {
-                type: String
-            },
-            localidad: {
-                type: String
-            },
-            tituloSecu: {
-                type: String
-                
-            }
-        
-    
     
 });
 

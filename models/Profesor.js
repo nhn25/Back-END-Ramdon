@@ -9,21 +9,6 @@ const  ProfesorShema = new Schema({
         unique: [true, 'El nombre de usuario está duplicado'],
         required: [true, 'El nombre de usuario es necesario']
     },
-    password:{
-        type: String,
-        required: [true, 'La contraseña es necesaria']
-    },
-    email:{
-        type: String,
-        unique: [true, 'El correo está duplicado'],
-        required: [true, 'El correo es necesario']
-    },
-    carrera:[
-        {
-            type: String,
-            required: [true, 'la carrera que enseña es necesaria']
-        }
-    ],
     materia:[
         {
             type: String,
@@ -43,17 +28,6 @@ const  ProfesorShema = new Schema({
             },
             provincia: {
                 type: String
-            },
-            from: {
-                type: Date,
-                required: true
-            },
-            to: {
-                type: Date,
-            },
-            current: {
-                type: Boolean,
-                default: false
             },
             description: {
                 type: String
